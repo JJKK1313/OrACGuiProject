@@ -13,7 +13,7 @@ class AC:
     MAX_AC_SET_TEMP = 30
     __slots__ = '_commands', '_room_name', '_id', '_currentSampledTemp', '_currentSetTemp', '_temperatureState', '_isOn'
 
-    def __init__(self, room_name='', commands=None, ac_id=''):
+    def __init__(self, room_name='', commands='', ac_id=''):
         self._commands = commands       # Dictionary -> {'ON':'cmd1', 'OFF':'cmd2', 'HOT':'cmd3'...}
         self._id = ac_id
         self._room_name = room_name

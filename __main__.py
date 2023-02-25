@@ -4,7 +4,7 @@ from PyQt5 import QtGui, QtWidgets
 from PyQt5.QtCore import QEvent
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtCore import pyqtSignal, pyqtSlot
-
+from CustomizeACWindow import CustomizeACWindow
 import ui_gui
 from ChooseACTypeScreen import ChooseACTypeScreen
 from ACManager import ACManager, AC
@@ -37,8 +37,10 @@ class MainWindow(QMainWindow):
     def userAddAc(self):
         if not self.ac_manager.isFull():
             dlg = ChooseACTypeScreen(self.ac_manager.getACIds(), parent=self)
-            dlg.exec_()
             if dlg.status:
+                if dlg.new_ac.commands is None:
+                    custom_ac_dlgBx = CustomizeACWindow(ac=dlg.new_ac, parent=self)
+                    custom_ac_dlgBx.exec_()
                 if self.ac_manager.addAC(acObj=dlg.new_ac):
                     self.ac_manager.saveToFile()
                     self.refresh()

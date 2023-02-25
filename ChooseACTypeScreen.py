@@ -4,7 +4,6 @@ from PyQt5.QtCore import Qt
 import re
 # import ui_ACTypeDialogBox
 import ui_ACTypeWindow
-from CustomizeACWindow import CustomizeACWindow
 from ACManager import AC
 # Electra AC protocol
 ELECTRA = {
@@ -37,6 +36,10 @@ class ChooseACTypeScreen(QtWidgets.QDialog):
         self.status = self.get_inputs()
         if not self.status:
             del self.new_ac
+        else:
+            self.exec_()
+            # if self.new_ac.commands is None:
+            print("Exec Done")
 
     def get_inputs(self):
         state = self._get_name_input()
@@ -97,20 +100,15 @@ class ChooseACTypeScreen(QtWidgets.QDialog):
         msg.setText(f"HC sensor with id = {id_val} exists in system.")
         msg.exec_()
 
-    def save_ac_of_type(self, ac_type_commands_dict):
+    def save_ac_of_type(self):
         if self.ui.AcTypesComboBox.currentText() == 'Electra':
             self.new_ac.commands = ELECTRA
         elif self.ui.AcTypesComboBox.currentText() == 'Samsung':
             self.new_ac.commands = SAMSUNG
         elif self.ui.AcTypesComboBox.currentText() == 'Customize...':
-            self.new_ac.commands = self.on_customize_click()
+            self.new_ac.commands = None   # Empty dict -> None
         self.close()
 
-    def on_customize_click(self):
-        self.customize_ac_window = CustomizeACWindow(self)
-        commands = None
-        return commands
-
     def closeEvent(self, a0: QtGui.QCloseEvent) -> None:
-        self.status = self.new_ac.commands is not None
+        self.status = self.new_ac.commands != ''        # '' is default value for commands.
         a0.accept()
