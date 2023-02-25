@@ -11,7 +11,7 @@ class CustomizeACWindow(QtWidgets.QDialog):
         self.setWindowModality(QtCore.Qt.WindowModality.WindowModal)   # block parent until window closed.
         self._brand_ac_name = None
         self.isSaved = False
-        self.ui = ui_CustomizeACWindow.Ui_Form()
+        self.ui = ui_CustomizeACWindow()
         self.ui.setupUi(self)
 
         self.ui.DoneNameGivingPushButton.clicked.connect(self.done_name_giving)
