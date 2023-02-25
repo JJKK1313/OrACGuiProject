@@ -4,7 +4,7 @@ import ui_CustomizeACWindow
 
 # Electra AC protocol
 
-class CustomizeACWindow(QtWidgets.QMainWindow):
+class CustomizeACWindow(QtWidgets.QDialog):
 
     def __init__(self, parent):
         super(CustomizeACWindow, self).__init__(parent=parent)

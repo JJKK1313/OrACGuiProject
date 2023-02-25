@@ -37,9 +37,7 @@ class MainWindow(QMainWindow):
     def userAddAc(self):
         if not self.ac_manager.isFull():
             dlg = ChooseACTypeScreen(self.ac_manager.getACIds(), parent=self)
-            print(dlg.isModal())
-            dlg.show()
-            print("FINITO LA COMEDIA")
+            dlg.exec_()
             if dlg.status:
                 if self.ac_manager.addAC(acObj=dlg.new_ac):
                     self.ac_manager.saveToFile()

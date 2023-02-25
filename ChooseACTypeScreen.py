@@ -19,13 +19,15 @@ SAMSUNG = {'Samsung': {'ON': [0, 0, 0], 'OFF': [1, 1, 1], 'TEMP1': [3, 3, 3], 'T
                        'COLD': [3, 3, 3]}}
 
 
-class ChooseACTypeScreen(QtWidgets.QMainWindow):
+class ChooseACTypeScreen(QtWidgets.QDialog):
     REGEX_PATTERN_LENGTH = 17
 
     def __init__(self, id_list, parent):
         super(ChooseACTypeScreen, self).__init__(parent=parent)
+        self.setWindowModality(Qt.ApplicationModal)
+        self.setAttribute(Qt.WA_DeleteOnClose)
         self.customize_ac_window = None
-        self.ui = ui_ACTypeWindow.Ui_ACTypeWindow()
+        self.ui = ui_ACTypeWindow.Ui_Dialog()
         self.ui.setupUi(self)
         self.exist_id_list = id_list
         self.new_ac = AC()
