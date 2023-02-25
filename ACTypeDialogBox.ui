@@ -152,7 +152,7 @@ QLabel{
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="CustomizePushBtn">
+       <widget class="QPushButton" name="DonePushButton">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
           <horstretch>0</horstretch>
