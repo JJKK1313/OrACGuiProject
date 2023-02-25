@@ -30,15 +30,15 @@ class Ui_Form(object):
         sizePolicy.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
         self.frame.setSizePolicy(sizePolicy)
         self.frame.setStyleSheet(u"#frame{\n"
-"background-color: rgb(169, 208, 255);\n"
-"}\n"
-"\n"
-"\n"
-"#frame QLabel#label\n"
-"{\n"
-"	font: 16pt \"Times New Roman\";\n"
-"}\n"
-"")
+                                 "background-color: rgb(169, 208, 255);\n"
+                                 "}\n"
+                                 "\n"
+                                 "\n"
+                                 "#frame QLabel#label\n"
+                                 "{\n"
+                                 "	font: 16pt \"Times New Roman\";\n"
+                                 "}\n"
+                                 "")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_2 = QVBoxLayout(self.frame)
@@ -48,7 +48,6 @@ class Ui_Form(object):
         self.label.setObjectName(u"label")
 
         self.verticalLayout_2.addWidget(self.label, 0, Qt.AlignHCenter)
-
 
         self.verticalLayout.addWidget(self.frame, 0, Qt.AlignTop)
 
@@ -73,33 +72,33 @@ class Ui_Form(object):
         self.nameFrame = QFrame(self.frame_2)
         self.nameFrame.setObjectName(u"nameFrame")
         self.nameFrame.setStyleSheet(u"QLabel#label_3\n"
-"{\n"
-"	font: 16pt \"Times New Roman\";\n"
-"}\n"
-"\n"
-"QLineEdit{\n"
-"	background-color: rgb(255, 255, 255);\n"
-"}\n"
-"\n"
-"#nameFrame QPushButton\n"
-"{\n"
-"	font: 15pt \"Times New Roman\";\n"
-"	font-color: black;\n"
-"	background: rgb(183, 230, 255);\n"
-"	border-radius: 10px;\n"
-"	border: 1px solid;\n"
-"}\n"
-"\n"
-"#nameFrame QPushButton::hover\n"
-"{\n"
-"	background: rgb(183, 230, 0);\n"
-"}\n"
-"\n"
-"#nameFrame QPushButton::pressed\n"
-"{\n"
-"	background: rgb(100, 150, 0);\n"
-"}\n"
-"")
+                                     "{\n"
+                                     "	font: 16pt \"Times New Roman\";\n"
+                                     "}\n"
+                                     "\n"
+                                     "QLineEdit{\n"
+                                     "	background-color: rgb(255, 255, 255);\n"
+                                     "}\n"
+                                     "\n"
+                                     "#nameFrame QPushButton\n"
+                                     "{\n"
+                                     "	font: 15pt \"Times New Roman\";\n"
+                                     "	font-color: black;\n"
+                                     "	background: rgb(183, 230, 255);\n"
+                                     "	border-radius: 10px;\n"
+                                     "	border: 1px solid;\n"
+                                     "}\n"
+                                     "\n"
+                                     "#nameFrame QPushButton::hover\n"
+                                     "{\n"
+                                     "	background: rgb(183, 230, 0);\n"
+                                     "}\n"
+                                     "\n"
+                                     "#nameFrame QPushButton::pressed\n"
+                                     "{\n"
+                                     "	background: rgb(100, 150, 0);\n"
+                                     "}\n"
+                                     "")
         self.nameFrame.setFrameShape(QFrame.StyledPanel)
         self.nameFrame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_3 = QVBoxLayout(self.nameFrame)
@@ -108,7 +107,7 @@ class Ui_Form(object):
         self.label_3 = QLabel(self.nameFrame)
         self.label_3.setObjectName(u"label_3")
 
-        self.verticalLayout_3.addWidget(self.label_3, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+        self.verticalLayout_3.addWidget(self.label_3, 0, Qt.AlignHCenter | Qt.AlignVCenter)
 
         self.CustomizeBrandNameLineEdit = QLineEdit(self.nameFrame)
         self.CustomizeBrandNameLineEdit.setObjectName(u"CustomizeBrandNameLineEdit")
@@ -119,7 +118,6 @@ class Ui_Form(object):
         self.DoneNameGivingPushButton.setObjectName(u"DoneNameGivingPushButton")
 
         self.verticalLayout_3.addWidget(self.DoneNameGivingPushButton)
-
 
         self.horizontalLayout.addWidget(self.nameFrame, 0, Qt.AlignLeft)
 
@@ -133,15 +131,15 @@ class Ui_Form(object):
         self.recordingFrame = QFrame(self.frame_2)
         self.recordingFrame.setObjectName(u"recordingFrame")
         self.recordingFrame.setStyleSheet(u"QLabel#commandLabel\n"
-"{\n"
-"	font: 16pt \"Times New Roman\";\n"
-"	color: rgb(0, 170, 0);\n"
-"}\n"
-"\n"
-"QLabel#instructionsLabel\n"
-"{\n"
-"	font: 12pt \"Times New Roman\";\n"
-"}")
+                                          "{\n"
+                                          "	font: 16pt \"Times New Roman\";\n"
+                                          "	color: rgb(0, 170, 0);\n"
+                                          "}\n"
+                                          "\n"
+                                          "QLabel#instructionsLabel\n"
+                                          "{\n"
+                                          "	font: 12pt \"Times New Roman\";\n"
+                                          "}")
         self.recordingFrame.setFrameShape(QFrame.StyledPanel)
         self.recordingFrame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_5 = QVBoxLayout(self.recordingFrame)
@@ -157,7 +155,6 @@ class Ui_Form(object):
 
         self.verticalLayout_5.addWidget(self.instructionsLabel)
 
-
         self.horizontalLayout.addWidget(self.recordingFrame)
 
         self.line_3 = QFrame(self.frame_2)
@@ -170,10 +167,10 @@ class Ui_Form(object):
         self.finishFrame = QFrame(self.frame_2)
         self.finishFrame.setObjectName(u"finishFrame")
         self.finishFrame.setStyleSheet(u"QLabel#label_4\n"
-"{\n"
-"	font: 20pt \"Times New Roman\";\n"
-"}\n"
-"")
+                                       "{\n"
+                                       "	font: 20pt \"Times New Roman\";\n"
+                                       "}\n"
+                                       "")
         self.finishFrame.setFrameShape(QFrame.StyledPanel)
         self.finishFrame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_4 = QVBoxLayout(self.finishFrame)
@@ -188,24 +185,24 @@ class Ui_Form(object):
         self.frame_6 = QFrame(self.finishFrame)
         self.frame_6.setObjectName(u"frame_6")
         self.frame_6.setStyleSheet(u"#frame_6 QPushButton\n"
-"{\n"
-"	font: 15pt \"Times New Roman\";\n"
-"	font-color: black;\n"
-"	background: rgb(183, 230, 255);\n"
-"	border-radius: 10px;\n"
-"	border: 1px solid;\n"
-"}\n"
-"\n"
-"#frame_6 QPushButton::hover\n"
-"{\n"
-"	background: rgb(183, 230, 0);\n"
-"}\n"
-"\n"
-"#frame_6 QPushButton::pressed\n"
-"{\n"
-"	background: rgb(100, 150, 0);\n"
-"}\n"
-"")
+                                   "{\n"
+                                   "	font: 15pt \"Times New Roman\";\n"
+                                   "	font-color: black;\n"
+                                   "	background: rgb(183, 230, 255);\n"
+                                   "	border-radius: 10px;\n"
+                                   "	border: 1px solid;\n"
+                                   "}\n"
+                                   "\n"
+                                   "#frame_6 QPushButton::hover\n"
+                                   "{\n"
+                                   "	background: rgb(183, 230, 0);\n"
+                                   "}\n"
+                                   "\n"
+                                   "#frame_6 QPushButton::pressed\n"
+                                   "{\n"
+                                   "	background: rgb(100, 150, 0);\n"
+                                   "}\n"
+                                   "")
         self.frame_6.setFrameShape(QFrame.StyledPanel)
         self.frame_6.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_2 = QHBoxLayout(self.frame_6)
@@ -221,19 +218,16 @@ class Ui_Form(object):
 
         self.horizontalLayout_2.addWidget(self.ExitPushButton)
 
-
         self.verticalLayout_4.addWidget(self.frame_6, 0, Qt.AlignBottom)
-
 
         self.horizontalLayout.addWidget(self.finishFrame)
 
-
         self.verticalLayout.addWidget(self.frame_2)
-
 
         self.retranslateUi(Form)
 
         QMetaObject.connectSlotsByName(Form)
+
     # setupUi
 
     def retranslateUi(self, Form):
@@ -247,4 +241,3 @@ class Ui_Form(object):
         self.SavePushButton.setText(QCoreApplication.translate("Form", u"Save", None))
         self.ExitPushButton.setText(QCoreApplication.translate("Form", u"Exit", None))
     # retranslateUi
-
