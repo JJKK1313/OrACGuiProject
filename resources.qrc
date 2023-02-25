@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="images">
+    <file>COLD.png</file>
+    <file>OFF.png</file>
+    <file>ON.png</file>
+    <file>WARM.png</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>icons8-plus-24.png</file>
+    <file>icons8-subtract-24.png</file>
+  </qresource>
+</RCC>
